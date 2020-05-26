@@ -1,0 +1,131 @@
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.22);
+}
+
+#navbar::before {
+    content: "";
+    background-color: yellow;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+/*Logo and Image*/
+#logo {
+    margin: 34px;
+}
+
+/*List Styling*/
+#logo img {
+    height: 100px;
+}
+
+
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    background-color: rgba(0, 0, 0, 0.35);
+    font-family: 'Baloo Paaji 2', cursive;
+    border-radius: 10px;
+}
+
+#navbar ul li:hover {
+    color: aliceblue;
+}
+
+#navbar ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+#navbar ul li a:hover {
+
+    color: black;
+    background-color: aliceblue;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+
+
+/*Home Section*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 0, 0);
+}
+
+#home::before {
+    content: "";
+    background-color: #00ff80;
+    position: absolute;
+    background-image: url(chinese%20food.jpg);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .89;
+}
+
+.h-primary {
+    font-size: 40px;
+    color: white;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+p {
+    color: white;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+
+.butt {
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    background-color: rgba(139, 69, 19, 0.41);
+    border-radius: 20px;
+    color: aliceblue;
+    border-color: aliceblue;
+    cursor: pointer;
+}
+
+.butt:hover {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.service-container{
+    display: flex;
+}
+
+
+.h-primary-center{
+    color: aqua;
+}
